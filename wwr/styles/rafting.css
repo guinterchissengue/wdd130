@@ -67,6 +67,7 @@ main {
 
 .hero {
     position: relative;
+    /* Must have position: relative */
     margin-bottom: 32px;
 }
 
@@ -78,6 +79,7 @@ main {
 
 .hero h1 {
     position: absolute;
+    /* Absolutely positioned over the image */
     top: 20px;
     width: 100%;
     text-align: center;
@@ -90,6 +92,7 @@ main {
 
 .hero .article-container {
     position: absolute;
+    /* Positioned on top of the image */
     bottom: -60px;
     left: 16px;
     right: 16px;
@@ -122,6 +125,7 @@ main {
     border-radius: 8px;
     margin-left: 16px;
     float: right;
+    /* Float image to the right side */
 }
 
 section {
