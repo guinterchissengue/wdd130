@@ -11,6 +11,7 @@
 
     --hero-text-bg-color: rgba(42, 157, 143, 0.7);
     --article-bg-color: rgba(183, 80, 36, 0.9);
+    /* Usado agora no CSS */
 }
 
 * {
@@ -68,7 +69,7 @@ main {
 /* Hero Section */
 .hero {
     position: relative;
-    /* Necessário para posicionar elementos filhos com 'absolute' */
+    /* Necessário para o posicionamento absoluto dos filhos */
     margin-bottom: 32px;
 }
 
@@ -80,7 +81,7 @@ main {
 
 .hero h1 {
     position: absolute;
-    /* Agora sobrepõe a imagem */
+    /* H1 sobrepondo a imagem */
     top: 20px;
     left: 0;
     width: 100%;
@@ -93,23 +94,23 @@ main {
     opacity: 0.8;
 }
 
-/* Ajustes do article-container */
+/* Ajustes para o artigo dentro do Hero */
 .hero .article-container {
     position: absolute;
     /* Necessário para sobrepor a imagem */
     bottom: -60px;
-    /* Ajuste de altura para posicionar corretamente */
+    /* Ajuste da posição */
     left: 50%;
     transform: translateX(-50%);
     /* Centraliza horizontalmente */
-    background-color: rgba(183, 80, 36, 0.9);
-    /* Ajuste no fundo para garantir contraste */
+    background-color: var(--article-bg-color);
+    /* Usando a variável */
     color: #fff;
     /* Cor do texto no artigo */
     padding: 16px 32px;
     border-radius: 8px;
     max-width: 600px;
-    /* Largura ajustada para o artigo */
+    /* Largura ajustada */
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
     display: flex;
     flex-wrap: wrap;
@@ -120,12 +121,12 @@ main {
     overflow: hidden;
 }
 
-/* Ajustes do texto dentro do artigo */
+/* Ajustes no título e no parágrafo do artigo */
 .hero .article-container h2 {
     font-size: 2rem;
     margin-bottom: 16px;
     color: #fff;
-    /* Garantindo bom contraste com o fundo */
+    /* Texto branco para bom contraste */
 }
 
 .hero .article-container p {
@@ -134,7 +135,6 @@ main {
     margin-bottom: 16px;
     flex: 1;
     max-height: 120px;
-    /* Limita a altura do parágrafo */
     overflow: hidden;
     display: -webkit-box;
     -webkit-line-clamp: 4;
@@ -145,7 +145,6 @@ main {
 /* Ajustes na imagem dentro do artigo */
 .hero .article-container img {
     width: 150px;
-    /* Imagem ajustada */
     height: auto;
     border-radius: 8px;
     margin-left: 16px;
