@@ -9,6 +9,14 @@
     --body-font: 'Arial', sans-serif;
     --text-color: #264653;
 
+    --footer-bg-color: #2a9d8f;
+
+    --footer-text-color: #fff;
+
+    --hero-text-bg-color: rgba(42, 157, 143, 0.7);
+
+    --article-bg-color: rgba(231, 111, 81, 0.8);
+
 }
 
 * {
@@ -52,6 +60,11 @@ nav a {
     text-decoration: none;
     color: var(--text-color);
     font-weight: bold;
+    font-size: 1.2rem;
+}
+
+nav a:hover {
+    color: var(--primary-color);
 }
 
 main {
@@ -75,18 +88,17 @@ main {
     width: 100%;
     text-align: center;
     padding: 16px;
-    background-color: rgba(42, 157, 143, 0.7);
-
+    background-color: var(--hero-text-bg-color);
     color: #fff;
     font-family: var(--heading-font);
+    font-size: 2.5rem;
 }
 
 .hero article {
     position: absolute;
     bottom: 20px;
     left: 16px;
-    background-color: rgba(231, 111, 81, 0.8);
-
+    background-color: var(--article-bg-color);
     color: #fff;
     padding: 16px;
     max-width: 400px;
@@ -111,12 +123,23 @@ h1,
 h2 {
     font-family: var(--heading-font);
     color: var(--primary-color);
+    margin-bottom: 16px;
+}
+
+h1 {
+    font-size: 2rem;
+}
+
+h2 {
+    font-size: 1.8rem;
 }
 
 footer {
     margin-top: 32px;
     padding: 16px;
     text-align: center;
+    background-color: var(--footer-bg-color);
+    color: var(--footer-text-color);
     border-top: 2px solid var(--accent-color);
 }
 
@@ -128,4 +151,8 @@ footer .socialmedia a {
 footer .socialmedia img {
     width: 32px;
     height: 32px;
+}
+
+footer .socialmedia a:hover img {
+    opacity: 0.8;
 }
