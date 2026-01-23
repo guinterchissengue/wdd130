@@ -95,7 +95,7 @@ main {
 }
 
 /* Ajustes para o artigo dentro do Hero */
-.hero .article-container {
+.hero article {
     position: absolute;
     /* Necessário para sobrepor a imagem */
     bottom: -60px;
@@ -122,14 +122,14 @@ main {
 }
 
 /* Ajustes no título e no parágrafo do artigo */
-.hero .article-container h2 {
+.hero article h2 {
     font-size: 2rem;
     margin-bottom: 16px;
     color: #fff;
     /* Texto branco para bom contraste */
 }
 
-.hero .article-container p {
+.hero article p {
     font-size: 1.1rem;
     line-height: 1.6;
     margin-bottom: 16px;
@@ -143,12 +143,12 @@ main {
 }
 
 /* Ajustes na imagem dentro do artigo */
-.hero .article-container img {
-    width: 150px;
+.hero article img {
+    float: right;
+    width: 125px;
     height: auto;
     border-radius: 8px;
     margin-left: 16px;
-    float: right;
     /* Imagem flutuando à direita do texto */
 }
 
