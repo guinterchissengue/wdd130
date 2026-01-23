@@ -68,7 +68,7 @@ main {
 /* Hero Section */
 .hero {
     position: relative;
-    /* Necessário para posicionar os elementos filhos absolutos */
+    /* Necessário para posicionar elementos filhos com 'absolute' */
     margin-bottom: 32px;
 }
 
@@ -93,39 +93,41 @@ main {
     opacity: 0.8;
 }
 
-/* Adjustments to article-container */
+/* Ajustes do article-container */
 .hero .article-container {
     position: absolute;
-    /* Necessário para se posicionar sobre a imagem */
+    /* Necessário para sobrepor a imagem */
     bottom: -60px;
-    /* Ajuste conforme necessário */
+    /* Ajuste de altura para posicionar corretamente */
     left: 50%;
     transform: translateX(-50%);
-    background-color: var(--article-bg-color);
+    /* Centraliza horizontalmente */
+    background-color: rgba(183, 80, 36, 0.9);
+    /* Ajuste no fundo para garantir contraste */
     color: #fff;
+    /* Cor do texto no artigo */
     padding: 16px 32px;
     border-radius: 8px;
     max-width: 600px;
-    /* Largura controlada */
+    /* Largura ajustada para o artigo */
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: flex-start;
-    /* Garante que o conteúdo dentro do artigo fique alinhado corretamente */
     height: auto;
     max-height: 320px;
-    /* Limita a altura do contêiner */
     overflow: hidden;
 }
 
-/* Article heading */
+/* Ajustes do texto dentro do artigo */
 .hero .article-container h2 {
     font-size: 2rem;
     margin-bottom: 16px;
+    color: #fff;
+    /* Garantindo bom contraste com o fundo */
 }
 
-/* Paragraph inside article */
 .hero .article-container p {
     font-size: 1.1rem;
     line-height: 1.6;
@@ -140,15 +142,15 @@ main {
     -webkit-box-orient: vertical;
 }
 
-/* Image inside article, float to right */
+/* Ajustes na imagem dentro do artigo */
 .hero .article-container img {
     width: 150px;
-    /* Ajusta a largura da imagem */
+    /* Imagem ajustada */
     height: auto;
     border-radius: 8px;
     margin-left: 16px;
     float: right;
-    /* A imagem vai flutuar à direita do texto */
+    /* Imagem flutuando à direita do texto */
 }
 
 section {
@@ -171,6 +173,7 @@ h2 {
     font-size: 1.8rem;
 }
 
+/* Ajustes no rodapé */
 footer {
     margin-top: 32px;
     padding: 16px;
