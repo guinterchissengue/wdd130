@@ -1,22 +1,18 @@
 :root {
     --primary-color: #2a9d8f;
-
     --accent-color: #e76f51;
-
     --bg-color: #f0f4f8;
-
     --heading-font: 'Verdana', sans-serif;
     --body-font: 'Arial', sans-serif;
     --text-color: #264653;
 
-    --footer-bg-color: #2a9d8f;
+    --footer-bg-color: #1e6e56;
 
     --footer-text-color: #fff;
 
     --hero-text-bg-color: rgba(42, 157, 143, 0.7);
 
-    --article-bg-color: rgba(231, 111, 81, 0.8);
-
+    --article-bg-color: rgba(183, 80, 36, 0.9);
 }
 
 * {
