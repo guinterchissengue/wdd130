@@ -99,6 +99,7 @@ main {
     padding: 16px;
     max-width: 400px;
     border-radius: 8px;
+    clip-path: polygon(0 100%, 100% 100%, 50% 0);
 }
 
 .hero article img {
@@ -145,7 +146,7 @@ footer .socialmedia a {
 }
 
 footer .socialmedia img {
-    width: 64x;
+    width: 64px;
     height: 64px;
 }
 
