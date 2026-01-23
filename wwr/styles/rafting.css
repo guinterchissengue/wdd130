@@ -91,7 +91,7 @@ main {
 }
 
 .hero article {
-    position: absolute;
+    position: relative;
     bottom: 20px;
     left: 16px;
     background-color: var(--article-bg-color);
@@ -99,16 +99,28 @@ main {
     padding: 16px;
     max-width: 400px;
     border-radius: 8px;
-    clip-path: polygon(0 100%, 100% 100%, 50% 0);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: auto;
+}
+
+.hero article p {
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    flex: 1;
+    margin-right: 16px;
 }
 
 .hero article img {
-    float: right;
     width: 125px;
     height: auto;
-    margin-left: 16px;
     border: 2px solid #fff;
     border-radius: 8px;
+    margin-top: 16px;
 }
 
 section {
@@ -133,23 +145,3 @@ h2 {
 
 footer {
     margin-top: 32px;
-    padding: 16px;
-    text-align: center;
-    background-color: var(--footer-bg-color);
-    color: var(--footer-text-color);
-    border-top: 2px solid var(--accent-color);
-}
-
-footer .socialmedia a {
-    text-decoration: none;
-    margin: 0 8px;
-}
-
-footer .socialmedia img {
-    width: 64px;
-    height: 64px;
-}
-
-footer .socialmedia a:hover img {
-    opacity: 0.8;
-}
