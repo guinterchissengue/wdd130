@@ -65,9 +65,10 @@ main {
     margin-top: 16px;
 }
 
+/* Hero Section */
 .hero {
     position: relative;
-    /* Corrigido: Necessário para que os elementos absolutos se posicionem sobre a imagem */
+    /* Necessário para posicionar os elementos filhos absolutos */
     margin-bottom: 32px;
 }
 
@@ -79,8 +80,9 @@ main {
 
 .hero h1 {
     position: absolute;
-    /* Corrigido: Posiciona o título sobre a imagem */
+    /* Agora sobrepõe a imagem */
     top: 20px;
+    left: 0;
     width: 100%;
     padding: 16px;
     text-align: center;
@@ -91,11 +93,12 @@ main {
     opacity: 0.8;
 }
 
+/* Adjustments to article-container */
 .hero .article-container {
     position: absolute;
-    /* Corrigido: Posiciona o artigo sobre a imagem */
+    /* Necessário para se posicionar sobre a imagem */
     bottom: -60px;
-    /* Ajuste a posição conforme necessário */
+    /* Ajuste conforme necessário */
     left: 50%;
     transform: translateX(-50%);
     background-color: var(--article-bg-color);
@@ -103,31 +106,33 @@ main {
     padding: 16px 32px;
     border-radius: 8px;
     max-width: 600px;
-    /* Largura ajustada */
+    /* Largura controlada */
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
     display: flex;
     flex-wrap: wrap;
-    align-items: center;
     justify-content: space-between;
+    align-items: flex-start;
+    /* Garante que o conteúdo dentro do artigo fique alinhado corretamente */
     height: auto;
     max-height: 320px;
     /* Limita a altura do contêiner */
     overflow: hidden;
-    /* Esconde qualquer conteúdo que ultrapasse o limite */
 }
 
+/* Article heading */
 .hero .article-container h2 {
     font-size: 2rem;
     margin-bottom: 16px;
 }
 
+/* Paragraph inside article */
 .hero .article-container p {
     font-size: 1.1rem;
     line-height: 1.6;
     margin-bottom: 16px;
     flex: 1;
     max-height: 120px;
-    /* Limita a altura do parágrafo para aproximadamente 4 linhas */
+    /* Limita a altura do parágrafo */
     overflow: hidden;
     display: -webkit-box;
     -webkit-line-clamp: 4;
@@ -135,14 +140,15 @@ main {
     -webkit-box-orient: vertical;
 }
 
+/* Image inside article, float to right */
 .hero .article-container img {
     width: 150px;
-    /* Imagem com tamanho ajustado */
+    /* Ajusta a largura da imagem */
     height: auto;
     border-radius: 8px;
     margin-left: 16px;
     float: right;
-    /* Corrigido: A imagem fica à direita do texto */
+    /* A imagem vai flutuar à direita do texto */
 }
 
 section {
