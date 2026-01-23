@@ -7,11 +7,9 @@
     --text-color: #264653;
 
     --footer-bg-color: #1e6e56;
-
     --footer-text-color: #fff;
 
     --hero-text-bg-color: rgba(42, 157, 143, 0.7);
-
     --article-bg-color: rgba(183, 80, 36, 0.9);
 }
 
@@ -104,7 +102,6 @@ main {
     display: flex;
     align-items: center;
     justify-content: space-between;
-
 }
 
 .hero .article-container h2 {
@@ -117,7 +114,6 @@ main {
     line-height: 1.6;
     margin-bottom: 16px;
     flex: 1;
-
 }
 
 .hero .article-container img {
@@ -125,6 +121,7 @@ main {
     height: auto;
     border-radius: 8px;
     margin-left: 16px;
+    float: right;
 }
 
 section {
