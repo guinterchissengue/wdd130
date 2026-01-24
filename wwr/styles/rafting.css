@@ -2,18 +2,21 @@
     --primary-color: #2a9d8f;
     --accent-color: #e76f51;
     --bg-color: #f0f4f8;
+
     --heading-font: 'Verdana', sans-serif;
     --body-font: 'Arial', sans-serif;
     --text-color: #264653;
 
     --footer-bg-color: #1e6e56;
-    --footer-text-color: #fff;
+    --footer-text-color: #ffffff;
 
     --hero-text-bg-color: rgba(42, 157, 143, 0.7);
     --article-bg-color: rgba(183, 80, 36, 0.9);
-    /* Usado agora no CSS */
 }
 
+/* =========================
+   RESET / BASE
+========================= */
 * {
     margin: 0;
     padding: 0;
@@ -26,6 +29,9 @@ body {
     background-color: var(--bg-color);
 }
 
+/* =========================
+   LAYOUT GERAL
+========================= */
 header,
 main,
 footer {
@@ -33,6 +39,9 @@ footer {
     margin: 0 auto;
 }
 
+/* =========================
+   HEADER
+========================= */
 header {
     display: flex;
     align-items: center;
@@ -40,7 +49,7 @@ header {
     padding: 16px 0;
 }
 
-header .logo {
+.logo {
     width: 150px;
     height: auto;
 }
@@ -62,15 +71,19 @@ nav a:hover {
     color: var(--primary-color);
 }
 
+/* =========================
+   MAIN
+========================= */
 main {
     margin-top: 16px;
 }
 
-/* Hero Section */
+/* =========================
+   HERO
+========================= */
 .hero {
     position: relative;
-    /* Necessário para o posicionamento absoluto dos filhos */
-    margin-bottom: 32px;
+    margin-bottom: 96px;
 }
 
 .hero img {
@@ -79,119 +92,6 @@ main {
     height: auto;
 }
 
+/* Título principal */
 .hero h1 {
     position: absolute;
-    /* H1 sobrepondo a imagem */
-    top: 20px;
-    left: 0;
-    width: 100%;
-    padding: 16px;
-    text-align: center;
-    background-color: var(--hero-text-bg-color);
-    color: #fff;
-    font-family: var(--heading-font);
-    font-size: 2.5rem;
-    opacity: 0.8;
-}
-
-/* Ajustes para o artigo dentro do Hero */
-.hero article {
-    position: absolute;
-    /* Necessário para sobrepor a imagem */
-    bottom: -60px;
-    /* Ajuste da posição */
-    left: 50%;
-    transform: translateX(-50%);
-    /* Centraliza horizontalmente */
-    background-color: var(--article-bg-color);
-    /* Usando a variável */
-    color: #fff;
-    /* Cor do texto no artigo */
-    padding: 16px 32px;
-    border-radius: 8px;
-    max-width: 600px;
-    /* Largura ajustada */
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: flex-start;
-    height: auto;
-    max-height: 320px;
-    overflow: hidden;
-}
-
-/* Ajustes no título e no parágrafo do artigo */
-.hero article h2 {
-    font-size: 2rem;
-    margin-bottom: 16px;
-    color: #fff;
-    /* Texto branco para bom contraste */
-}
-
-.hero article p {
-    font-size: 1.1rem;
-    line-height: 1.6;
-    margin-bottom: 16px;
-    flex: 1;
-    max-height: 120px;
-    overflow: hidden;
-    display: -webkit-box;
-    -webkit-line-clamp: 4;
-    /* Limita o texto a 4 linhas */
-    -webkit-box-orient: vertical;
-}
-
-/* Ajustes na imagem dentro do artigo */
-.hero article img {
-    float: right;
-    width: 125px;
-    height: auto;
-    border-radius: 8px;
-    margin-left: 16px;
-    /* Imagem flutuando à direita do texto */
-}
-
-section {
-    margin: 24px 16px;
-    padding: 8px;
-}
-
-h1,
-h2 {
-    font-family: var(--heading-font);
-    color: var(--primary-color);
-    margin-bottom: 16px;
-}
-
-h1 {
-    font-size: 2rem;
-}
-
-h2 {
-    font-size: 1.8rem;
-}
-
-/* Ajustes no rodapé */
-footer {
-    margin-top: 32px;
-    padding: 16px;
-    text-align: center;
-    background-color: var(--footer-bg-color);
-    color: var(--footer-text-color);
-    border-top: 2px solid var(--accent-color);
-}
-
-footer .socialmedia a {
-    text-decoration: none;
-    margin: 0 8px;
-}
-
-footer .socialmedia img {
-    width: 64px;
-    height: 64px;
-}
-
-footer .socialmedia a:hover img {
-    opacity: 0.8;
-}
