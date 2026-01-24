@@ -2,20 +2,17 @@
     --primary-color: #2a9d8f;
     --accent-color: #e76f51;
     --bg-color: #f0f4f8;
-
     --heading-font: 'Verdana', sans-serif;
     --body-font: 'Arial', sans-serif;
     --text-color: #264653;
-
     --footer-bg-color: #1e6e56;
     --footer-text-color: #ffffff;
-
     --hero-text-bg-color: rgba(42, 157, 143, 0.7);
     --article-bg-color: rgba(183, 80, 36, 0.9);
 }
 
 /* =========================
-   RESET / BASE
+   RESET
 ========================= */
 * {
     margin: 0;
@@ -23,6 +20,9 @@
     box-sizing: border-box;
 }
 
+/* =========================
+   BASE
+========================= */
 body {
     font-family: var(--body-font);
     color: var(--text-color);
@@ -30,7 +30,7 @@ body {
 }
 
 /* =========================
-   LAYOUT GERAL
+   LAYOUT
 ========================= */
 header,
 main,
@@ -44,14 +44,13 @@ footer {
 ========================= */
 header {
     display: flex;
-    align-items: center;
     justify-content: space-between;
+    align-items: center;
     padding: 16px 0;
 }
 
 .logo {
     width: 150px;
-    height: auto;
 }
 
 nav ul {
@@ -64,7 +63,6 @@ nav a {
     text-decoration: none;
     color: var(--text-color);
     font-weight: bold;
-    font-size: 1.2rem;
 }
 
 nav a:hover {
@@ -72,26 +70,102 @@ nav a:hover {
 }
 
 /* =========================
-   MAIN
-========================= */
-main {
-    margin-top: 16px;
-}
-
-/* =========================
-   HERO
+   HERO (RUBRICA-COMPLIANT)
 ========================= */
 .hero {
     position: relative;
+    /* OBRIGATÓRIO */
     margin-bottom: 96px;
 }
 
 .hero img {
-    display: block;
     width: 100%;
-    height: auto;
+    display: block;
 }
 
-/* Título principal */
+/* Hero title overlay */
 .hero h1 {
     position: absolute;
+    /* OBRIGATÓRIO */
+    top: 20px;
+    left: 0;
+    width: 100%;
+    padding: 16px;
+    text-align: center;
+    font-family: var(--heading-font);
+    background-color: var(--hero-text-bg-color);
+    color: #ffffff;
+}
+
+/* Hero article overlay */
+.hero article {
+    position: absolute;
+    /* OBRIGATÓRIO */
+    bottom: -60px;
+    left: 50%;
+    transform: translateX(-50%);
+    max-width: 600px;
+    padding: 16px 32px;
+    background-color: var(--article-bg-color);
+    color: #ffffff;
+    border-radius: 8px;
+}
+
+/* Article heading (white ONLY here) */
+.hero article h2 {
+    font-family: var(--heading-font);
+    color: #ffffff;
+    margin-bottom: 16px;
+}
+
+/* Article text */
+.hero article p {
+    line-height: 1.6;
+}
+
+/* Article image — FLOAT RIGHT (OBRIGATÓRIO) */
+.hero article img {
+    float: right;
+    width: 125px;
+    margin-left: 16px;
+    border-radius: 8px;
+}
+
+/* =========================
+   SECTIONS
+========================= */
+section {
+    margin: 24px 16px;
+    padding: 8px;
+}
+
+/* Global headings */
+h1,
+h2 {
+    font-family: var(--heading-font);
+    color: var(--primary-color);
+}
+
+h2 {
+    font-size: 1.8rem;
+}
+
+/* =========================
+   FOOTER
+========================= */
+footer {
+    margin-top: 32px;
+    padding: 16px;
+    text-align: center;
+    background-color: var(--footer-bg-color);
+    color: var(--footer-text-color);
+    border-top: 2px solid var(--accent-color);
+}
+
+footer .socialmedia a {
+    margin: 0 8px;
+}
+
+footer .socialmedia img {
+    width: 64px;
+}
