@@ -30,7 +30,6 @@ footer {
     margin: 0 auto;
 }
 
-/* Header com Grid */
 header {
     display: grid;
     grid-template-columns: 200px 1fr;
@@ -38,12 +37,10 @@ header {
     padding: 16px 0;
 }
 
-/* Logo */
 .logo {
     width: 150px;
 }
 
-/* Nav com Flex */
 nav ul {
     list-style: none;
     display: flex;
@@ -61,7 +58,6 @@ nav a:hover {
     color: var(--primary-color);
 }
 
-/* Hero Section */
 .hero {
     position: relative;
     margin-bottom: 96px;
@@ -113,7 +109,6 @@ nav a:hover {
     border-radius: 8px;
 }
 
-/* Sections */
 section {
     margin: 24px 16px;
     padding: 8px;
@@ -129,7 +124,6 @@ h2 {
     font-size: 1.8rem;
 }
 
-/* Adventure Gallery */
 .adventure-gallery {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
@@ -152,7 +146,6 @@ h2 {
     color: var(--text-color);
 }
 
-/* Footer */
 footer {
     display: flex;
     justify-content: space-between;
