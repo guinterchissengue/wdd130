@@ -1,170 +1,91 @@
-:root {
-    --primary-color: #2a9d8f;
-    --accent-color: #e76f51;
-    --bg-color: #f0f4f8;
-    --heading-font: 'Verdana', sans-serif;
-    --body-font: 'Arial', sans-serif;
-    --text-color: #264653;
-    --footer-bg-color: #1e6e56;
-    --footer-text-color: #ffffff;
-    --hero-text-bg-color: #1e6e56;
-    --article-bg-color: rgba(183, 80, 36, 0.9);
-}
+/* =========================
+   CONTACT PAGE STYLES
+========================= */
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-body {
-    font-family: var(--body-font);
-    color: var(--text-color);
-    background-color: var(--bg-color);
-}
-
-header,
-main,
-footer {
-    width: 840px;
-    margin: 0 auto;
-}
-
-header {
-    display: grid;
-    grid-template-columns: 200px 1fr;
-    align-items: center;
-    padding: 16px 0;
-}
-
-.logo {
-    width: 150px;
-}
-
-nav ul {
-    list-style: none;
-    display: flex;
-    justify-content: flex-end;
-    gap: 24px;
-}
-
-nav a {
-    text-decoration: none;
-    color: var(--text-color);
-    font-weight: bold;
-}
-
-nav a:hover {
-    color: var(--primary-color);
-}
-
-.hero {
-    position: relative;
-    margin-bottom: 96px;
-}
-
-.hero img {
-    width: 100%;
-    display: block;
-}
-
-.hero h1 {
-    position: absolute;
-    top: 20px;
-    left: 0;
-    width: 100%;
-    padding: 16px;
-    text-align: center;
-    font-family: var(--heading-font);
-    background-color: var(--hero-text-bg-color);
-    color: #ffffff;
-}
-
-.hero article {
-    position: absolute;
-    bottom: -60px;
-    left: 50%;
-    transform: translateX(-50%);
-    max-width: 600px;
-    padding: 16px 32px;
-    background-color: var(--article-bg-color);
-    color: #ffffff;
-    border-radius: 8px;
-}
-
-.hero article h2 {
-    font-family: var(--heading-font);
-    color: #ffffff;
-    margin-bottom: 16px;
-}
-
-.hero article p {
+.company-info p {
+    margin-bottom: 8px;
     line-height: 1.6;
 }
 
-.hero article img {
-    float: right;
-    width: 125px;
-    margin-left: 16px;
+.company-info iframe {
+    width: 100%;
+    height: 250px;
+    margin-top: 16px;
     border-radius: 8px;
 }
 
-section {
-    margin: 24px 16px;
-    padding: 8px;
-}
-
-h1,
-h2 {
-    font-family: var(--heading-font);
-    color: var(--primary-color);
-}
-
-h2 {
-    font-size: 1.8rem;
-}
-
-.adventure-gallery {
+.employee-gallery {
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    gap: 16px;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
     margin-top: 16px;
 }
 
-.adventure-gallery figure {
+.employee-gallery figure {
     text-align: center;
 }
 
-.adventure-gallery img {
+.employee-gallery img {
     width: 100%;
     border-radius: 8px;
 }
 
-.adventure-gallery figcaption {
+.employee-gallery figcaption {
     margin-top: 8px;
     font-weight: bold;
-    color: var(--text-color);
 }
 
-footer {
+/* Contact Form */
+.contact-form form {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    flex-direction: column;
+    gap: 16px;
+    max-width: 600px;
+}
+
+.contact-form label {
+    font-weight: bold;
+}
+
+.contact-form input,
+.contact-form textarea {
+    padding: 10px;
+    font-family: var(--body-font);
+    border-radius: 4px;
+    border: 1px solid #ccc;
+}
+
+fieldset {
+    border: 1px solid #ccc;
     padding: 16px;
-    background-color: var(--footer-bg-color);
-    color: var(--footer-text-color);
-    border-top: 2px solid var(--accent-color);
+    border-radius: 4px;
 }
 
-footer p {
-    margin: 0;
+legend {
+    font-weight: bold;
+    padding: 0 8px;
 }
 
-footer .socialmedia {
-    display: flex;
-    gap: 12px;
+fieldset label {
+    display: block;
+    margin-top: 8px;
+    font-weight: normal;
 }
 
-footer .socialmedia img {
-    width: 64px;
+.newsletter {
+    font-weight: normal;
+}
+
+button[type="submit"] {
+    background-color: var(--primary-color);
+    color: #ffffff;
+    border: none;
+    padding: 12px;
+    font-size: 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
+    background-color: var(--accent-color);
 }
