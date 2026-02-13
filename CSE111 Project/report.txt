@@ -1,0 +1,14 @@
+
+Table of Work – CSE 111 Project
+
+----------------------------------------------------
+Date        | Task Description                  | Time
+----------------------------------------------------
+Mon         | Proposal and project planning     | 2.0
+Tue         | Function design and structure     | 2.5
+Wed         | Core simulation logic             | 3.0
+Thu         | Testing with pytest               | 2.5
+Fri         | Debugging and improvements        | 2.0
+----------------------------------------------------
+Total Time Spent: 12.0 hours
+----------------------------------------------------
