@@ -228,10 +228,6 @@ nav ul li a:hover {
     color: #fff;
 }
 
-/* =========================
-   FOOTER
-========================= */
-
 footer {
     padding: 24px;
     background-color: #023e8a;
@@ -239,9 +235,10 @@ footer {
     text-align: center;
 }
 
-/* =========================
-   CONTACT PAGE STYLES
-========================= */
+footer .socialmedia img {
+    width: 30px;
+    height: auto;
+}
 
 .company-info p {
     margin-bottom: 8px;
