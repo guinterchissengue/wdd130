@@ -1,6 +1,4 @@
-/* =========================
-   GLOBAL STYLES
-========================= */
+
 
 :root {
     --primary-color: #0077b6;
@@ -24,9 +22,6 @@ body {
     color: var(--text-dark);
 }
 
-/* =========================
-   HEADER AND NAV
-========================= */
 
 header {
     display: flex;
@@ -58,9 +53,6 @@ nav ul li a:hover {
     color: var(--accent-color);
 }
 
-/* =========================
-   HERO SECTION
-========================= */
 
 .hero {
     position: relative;
@@ -88,7 +80,6 @@ nav ul li a:hover {
     text-align: center;
 }
 
-/* Hero article overlay */
 .hero article {
     position: absolute;
     top: 20%;
@@ -107,9 +98,6 @@ nav ul li a:hover {
     border-radius: 8px;
 }
 
-/* =========================
-   NEWSLETTER
-========================= */
 
 .newsletter {
     padding: 32px;
@@ -154,9 +142,6 @@ nav ul li a:hover {
     background-color: var(--accent-color);
 }
 
-/* =========================
-   CALL TO ACTION
-========================= */
 
 .cta {
     padding: 32px;
@@ -183,9 +168,6 @@ nav ul li a:hover {
     background-color: var(--accent-color);
 }
 
-/* =========================
-   HOME GRID
-========================= */
 
 .home-grid {
     display: grid;
@@ -203,9 +185,6 @@ nav ul li a:hover {
     border-radius: 8px;
 }
 
-/* =========================
-   TRIPS GRID
-========================= */
 
 .trips-grid {
     display: grid;
@@ -228,9 +207,6 @@ nav ul li a:hover {
     margin-bottom: 12px;
 }
 
-/* =========================
-   TRIPS TABLE
-========================= */
 
 .trips-table {
     padding: 32px;
@@ -253,9 +229,6 @@ nav ul li a:hover {
     color: var(--white);
 }
 
-/* =========================
-   CONTACT PAGE
-========================= */
 
 .company-info p {
     margin-bottom: 8px;
@@ -327,9 +300,6 @@ fieldset label {
     font-weight: normal;
 }
 
-/* =========================
-   FOOTER
-========================= */
 
 footer {
     padding: 24px;
